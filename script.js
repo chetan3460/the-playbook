@@ -389,7 +389,8 @@ const steps = [
     id: "matrix",
     title: "ANSOFF MATRIX",
     content: [
-      { type: "ansoff-grid" },
+      // { type: "ansoff-grid" },
+      { type: "image", src: "images/ansoff.png", alt: "ansoff matrix" },
       { type: "text", value: "Before we begin crafting the perfect message, we need to understand our product. The FCB grid helps us place it perfectly on a neat grid." },
       { type: "text", value: "The grid has two axes:" },
       { type: "text", value: "1. X Axis - Emotional Involvement" },
