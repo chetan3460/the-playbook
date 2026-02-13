@@ -36,7 +36,7 @@ body {
   .playbook {
     .header {
       //background-color: #7fd6f7;
-      background-color: #1ed760;
+      background-color: #1383d2;
       //background: #0434C4 ;
       //background: linear-gradient(0deg,rgba(4, 52, 196, 1) 0%, #1ed760 74%);
 
@@ -419,11 +419,10 @@ body {
                 line-height: 20px;
                 font-weight: bold;
                 border: none;
-                background: #fff;
-                padding: 10px 7px;
-                border-radius: 20px 19px;
+                background: transparent;
+                // padding: 10px 7px;
+                // border-radius: 20px 19px;
                 color: red;
-                box-shadow: 1.5px 1.5px #000000;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-duration: 150ms;
                 transition-property: all;
@@ -437,6 +436,7 @@ body {
                 &:hover {
                   box-shadow: none;
                   transform: translate(1px, 2px);
+                  box-shadow: 1.5px 1.5px #000000;
                 }
               }
             }

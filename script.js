@@ -371,7 +371,7 @@ const steps = [
     id: "fcb",
     title: "FCB GRID",
     content: [
-      { type: "fcb-grid" },
+      // { type: "fcb-grid" },
       { type: "text", value: "The FCB Grid maps products on two axes: <b>Thinking vs Feeling</b> and <b>High vs Low Involvement</b>. This helps determine the right advertising approach—whether to <b>inform</b>, <b>evoke emotion</b>, or <b>drive action</b>." },
       { type: "text", value: "<b>Quadrant 1: High Involvement + Thinking</b>" },
       { type: "text", value: "Products like life insurance, utility cars, and commercial real estate require research and careful evaluation. Consumers follow a learn–feel–do path, so advertising should focus on detailed features and information." },
@@ -380,7 +380,9 @@ const steps = [
       { type: "text", value: "<b>Quadrant 3: Low Involvement + Thinking</b>" },
       { type: "text", value: "Everyday products like toothpaste, detergents, and stationery involve quick, habitual decisions, though features still matter. Trials and demos help drive preference." },
       { type: "text", value: "<b>Quadrant 4: Low Involvement + Feeling</b>" },
-      { type: "text", value: "mpulse products like ice cream, snacks, and inexpensive accessories are bought first and evaluated later. Advertising should stress low price and instant" }
+      { type: "text", value: "mpulse products like ice cream, snacks, and inexpensive accessories are bought first and evaluated later. Advertising should stress low price and instant" },
+      { type: "image", src: "images/fcb-grid.png", alt: "insights" }
+
     ]
   },
   {
