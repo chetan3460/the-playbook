@@ -574,7 +574,7 @@ const steps = [
       { type: "dropdown", label: "EXAGGERATION", desc: "Visual hyperbole.", image: "images/exaggeration-2.jpg" },
       { type: "dropdown", label: "TYPOGRAPHIC", desc: "Using text as a visual element.", image: "images/typography.jpg" },
       { type: "dropdown", label: "DEMONSTRATION", desc: "Showing the product in use.", image: "images/dove.jpg" },
-      { type: "dropdown", label: "COLOUR", desc: "Using color psychology." },
+      { type: "dropdown", label: "COLOUR", desc: "Using color psychology.", image: "images/Colour.png" },
       { type: "dropdown", label: "ANTHROPOMORPHISM", desc: "Giving human traits to objects.", image: "images/enthropomorphism.jpg" },
       { type: "dropdown", label: "METONYMY", desc: "Visual metaphor.", image: "images/metonymy-2.jpg" }
     ]
