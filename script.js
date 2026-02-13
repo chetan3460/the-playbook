@@ -207,8 +207,9 @@ function createStpModel() {
 
   stages.forEach(stage => {
     const row = document.createElement("div");
-    row.className = "stp-stage d-flex align-items-center mb-2 p-2 border rounded";
+    row.className = "stp-stage d-flex align-items-center mb-2 p-2 rounded";
     row.style.background = "#effaff";
+    row.style.border = "1.5px solid #225CE0";
 
     row.innerHTML = `
       <img src="${stage.icon}" alt="${stage.label}" style="width: 40px; margin-right: 15px;">
