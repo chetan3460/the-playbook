@@ -1,0 +1,16 @@
+{
+  "name": "the-playbook",
+  "version": "1.0.0",
+  "description": "A Guide to Generating Communication Ideas",
+  "main": "script.js",
+  "scripts": {
+    "build": "sass style.scss style.css",
+    "dev": "sass --watch style.scss style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Playbook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="playbook">
+        <div class="header">
+            <div class="container-fluid ">
+                <div class="row g-0 position-relative">
+                    <div class="col-12 ">
+                        <img src="images/background.png" alt="banner-image" width="100%">
+                    </div>
+                    <div class="banner col-12 d-flex justify-content-center align-items-center flex-column position-absolute">
+                        <button class="btn"><a href="#flow-chart" >START GAME</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flow-chart pb-5 position-relative" id="flow-chart">
+            <div class="title p-4 mb-5">
+                <h3>THE PLAYBOOK</h3>
+                <p>A Guide to Generating Communication Ideas</p>
+            </div>
+            <div class="content pt-5">
+                <div class="container text-center">
+                    <!-- client brief -->
+                    <div class="row">
+                        <div class="client-brief col-12 py-2 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="client" class="node circle">CLIENT BRIEF</div>
+                        </div>
+                    </div>
+                    <!-- semcdr model -->
+                    <div class="row">
+                        <div class="col-12 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="semcdr" class="node ">SEMCDR MODEL</div>
+                        </div>
+                    </div>
+                    <!-- brand / product  -->
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-lg-4 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="brand" class="node box mb-3">BRAND / PRODUCT</div>
+                            <div class="sub-content d-flex flex-row justify-content-around align-items-center gap-5 py-3 py-lg-5">
+                                <div id="fcb" class="node box p-2">FCB GRID</div>
+                                <div id="matrix" class="node box p-2">ANSOFF MATRIX</div>
+                            </div>
+                        </div>
+                        <!-- target audience -->
+                        <div class="col-12 col-lg-4 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="audience" class="node box mb-3">TARGET AUDIENCE</div>
+                            <div class="sub-content d-flex flex-row justify-content-around align-items-center gap-5 py-3 py-lg-5">
+                                <div id="hierarchy" class="node box">HIERARCHY <br> OF EFFECTS</div>
+                                <div id="stp" class="node box">STP MODEL</div>
+                            </div>
+                        </div>
+                        <!-- channel -->
+                        <div class="col-12 col-lg-2 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="channel" class="node ">CHANNEL</div>
+                        </div>
+                        <!-- message -->
+                        <div class="col-12 col-lg-2 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="message" class="node ">MESSAGE</div>
+                        </div>
+                    </div>
+                    <!-- insights -->
+                    <div class="row">
+                        <div class="col-12 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div class="pt-0 pt-lg-5">
+                                <div id="insights" class="node ">INSIGHTS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- route -->
+                    <div class="row">
+                        <div class="col-12 rhombus py-3 py-lg-5">
+                            <div id="route"></div>
+                        </div>
+                    </div>
+                    <!-- rational -->
+                    <div class="row">
+                        <div class="col-12 col-lg-5 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="rational" class="node box mb-3 ">RATIONAL</div>
+                            <div class="sub-content d-flex flex-row justify-content-around align-items-center gap-5 py-3 py-lg-5">
+                                <div id="features" class="node box p-2">FEATURES</div>
+                                <div id="value" class="node box p-2">VALUE</div>
+                            </div>
+                            <div class="sub-content d-flex flex-row justify-content-around align-items-center gap-5 py-3 py-lg-5">
+                                <div id="social-proof" class="node box p-2">SOCIAL PROOF</div>
+                                <div id="authority" class="node box p-2">AUTHORITY</div>
+                            </div>
+                        </div>
+                        <!-- hybrid -->
+                        <div class="col-12 col-lg-2 py-3 py-lg-5 d-flex justify-content-start align-items-center flex-column">
+                            <div id="hybrid" class="node box">HYBRID</div>
+                        </div>
+                        <!-- emotional -->
+                        <div class="col-12 col-lg-5 py-3 py-lg-5 d-flex justify-content-start align-items-center flex-column">
+                            <div id="emotional" class="node box">EMOTIONAL</div>
+                            <div class="sub-content d-flex flex-row justify-content-around align-items-center gap-5 py-3 py-lg-5">
+                                <div id="feelings" class="node box">FEELINGS</div>
+                                <div id="desires" class="node box">DESIRES</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- execution -->
+                    <div class="row">
+                        <div class="col-12 py-3 py-lg-5  d-flex flex-column align-items-center">
+                            <div id="execution" class="node box">EXECUTION</div>
+                        </div>
+                    </div>
+                    <!-- copy, visual design -->
+                    <div class="row">
+                        <div class="col-12 col-lg-3 d-flex flex-column align-items-center">
+                            <div></div>
+                        </div>
+                        <!-- copy -->
+                        <div class="col-12 col-lg-3 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="copy" class="node box">COPY</div>
+                        </div>
+                        <!-- message -->
+                        <div class="col-12 col-lg-3 py-3 py-lg-5 d-flex flex-column align-items-center">
+                            <div id="visual-design" class="node box">VISUAL DESIGN</div>
+                        </div>
+                        <div class="col-12 col-lg-3 d-flex flex-column align-items-center">
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- the final creative -->
+                    <div class="row">
+                        <div class="col-12 py-3 py-lg-5  d-flex flex-column align-items-center">
+                            <div id="creative" class="node circle">THE FINAL CREATIVE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog position-absolute" id="dialog">
+                <div class="dialog-content position-fixed d-flex justify-content-between flex-column align-items-start">
+                    <div class="dailog-header d-flex justify-content-between align-items-center py-2 px-3 ">
+                        <div class="title-wrapper">
+                            <h2 id="dialog-title"></h2>
+                            <span id="dialog-subtitle"></span>
+                        </div>
+                        <div class="cancel">
+                            <button class="close"><img src="images/arrow-right.png" alt="arrow-right"></button>
+                        </div>
+                    </div>
+                    <div class="dialog-body">
+                        <div class="dialog-content"></div>
+                    </div>
+                    <div class="dialog-footer d-flex justify-content-between align-items-center mt-4">
+                        <button id="prevBtn"><img src="images/arrow.png" alt="arrow" width="25"> &nbsp; Preview</button>
+                        <button id="nextBtn">Next Play&nbsp;<img src="images/right-arrow.png" alt="arrow" width="21"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="imageZoomOverlay" class="image-zoom-overlay">
+                <button class="image-zoom-close">✕</button>
+                <img id="imageZoomTarget" src="" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

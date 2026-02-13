@@ -1,0 +1,662 @@
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif, arial;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  color: #333333;
+  cursor: none;
+  background-color: #1383d2;
+  cursor: url("images/ball_01.png") 16 16, auto !important;
+  /* width */
+}
+body ::-webkit-scrollbar {
+  width: 13px;
+}
+body {
+  /* Track */
+}
+body ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0px;
+}
+body {
+  /* Handle */
+}
+body ::-webkit-scrollbar-thumb {
+  background: #00aeef;
+  border-radius: 0px;
+  height: 20px;
+}
+body {
+  /* Handle on hover */
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #042579;
+}
+body .playbook .header {
+  background-color: #1ed760;
+}
+body .playbook .header .banner {
+  top: 52%;
+  right: 0;
+  left: 0;
+}
+body .playbook .header .banner button {
+  display: inline-block;
+  position: relative;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  background: #00aeef;
+  cursor: url("images/ball_01_01.png") 16 16, auto !important;
+}
+body .playbook .header .banner button a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s all;
+  display: block;
+  padding: 5px 40px;
+  font-weight: 600;
+  cursor: url("images/ball_01_01.png") 16 16, auto !important;
+}
+body .playbook .header .banner button a::before {
+  content: "";
+  width: 2px;
+  height: 0;
+  left: 0;
+  top: 0;
+  cursor: url("images/ball_01_01.png") 16 16, auto !important;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #042579;
+}
+body .playbook .header .banner button a::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  cursor: url("images/ball_01_01.png") 16 16, auto !important;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #042579;
+}
+body .playbook .header .banner button::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  cursor: url("images/ball_01_01.png") 16 16, auto !important;
+  transition: all 0.2s linear;
+  background: #042579;
+}
+body .playbook .header .banner button::after {
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  cursor: url("images/ball_01_01.png") 16 16, auto !important;
+  transition: all 0.2s linear;
+  background: #042579;
+}
+body .playbook .header .banner button:hover::before, body .playbook .header .banner button:hover::after {
+  width: 100%;
+}
+body .playbook .header .banner button:hover a::before, body .playbook .header .banner button:hover a::after {
+  height: 100%;
+}
+body .playbook .header .banner .btn::after::after {
+  left: 0;
+  bottom: 0;
+  transition-delay: 0.6s;
+}
+body .playbook .header .banner .btn::after::before {
+  right: 0;
+  top: 0;
+  transition-delay: 0.2s;
+}
+body .playbook .header .banner .btn::after a::after {
+  right: 0;
+  bottom: 0;
+  transition-delay: 1.5s;
+}
+body .playbook .header .banner .btn::after a::before {
+  left: 0;
+  top: 0;
+  transition-delay: 1.5s;
+}
+body .playbook .header .banner .btn::after:hover::after {
+  transition-delay: 1.5s;
+}
+body .playbook .header .banner .btn::after:hover::before {
+  transition-delay: 1.5s;
+}
+body .playbook .header .banner .btn::after:hover a::after {
+  transition-delay: 1.5s;
+}
+body .playbook .header .banner .btn::after:hover a::before {
+  transition-delay: 1.5s;
+}
+body .playbook .flow-chart .title {
+  background-color: #7fd6f7;
+  box-shadow: 1.5px 10px 15px rgba(50, 50, 50, 0.3019607843);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  color: #00072b;
+}
+body .playbook .flow-chart .title h3 {
+  font-weight: 800;
+  margin-bottom: 3px;
+}
+body .playbook .flow-chart .title p {
+  font-family: mulish;
+  margin-bottom: 0;
+}
+body .playbook .flow-chart .content .container {
+  background-image: url(images/bg-3.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.35s ease;
+}
+.playbook.dialog-open .content .container {
+  transform: translateX(-20%);
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .playbook.dialog-open .content .container {
+    transform: translateX(-30%);
+  }
+}
+@media (max-width: 576px) {
+  .playbook.dialog-open .content .container {
+    transform: translateX(0);
+  }
+}
+
+body .playbook .flow-chart .content .container .node {
+  background: #fff;
+  padding: 10px 19px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: max-content;
+  position: relative;
+  z-index: 7;
+  transition: all 0.5s ease;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8400ff;
+  box-shadow: 3.5px 3.5px #8400ff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-property: all;
+}
+body .playbook .flow-chart .content .container .node:hover {
+  background-color: rgba(132, 0, 255, 0.3294117647);
+  box-shadow: none;
+  transform: translate(1px, 2px);
+  cursor: url("images/ball_01_01.png") 16 16, auto !important;
+}
+body .playbook .flow-chart .content .container .node.selected {
+  background-color: rgba(132, 0, 255, 0.3294117647);
+}
+body .playbook .flow-chart .content .container .circle {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 140px;
+  height: 140px;
+  line-height: 1.2;
+  border: 1px solid #700029;
+  box-shadow: 1.5px 1.5px #700029;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-property: all;
+}
+body .playbook .flow-chart .content .container .circle:hover {
+  background-color: rgba(112, 0, 41, 0.4509803922);
+  box-shadow: none;
+  transform: translate(1px, 2px);
+  cursor: url("images/ball_01_01.png") 16 16, auto !important;
+}
+body .playbook .flow-chart .content .container .circle span {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+body .playbook .flow-chart .content .container .circle.selected {
+  background-color: rgba(112, 0, 41, 0.4509803922);
+}
+body .playbook .flow-chart .content .container .box {
+  min-width: 120px;
+}
+body .playbook .flow-chart .content .container .rhombus {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body .playbook .flow-chart .content .container .rhombus #route {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg); /* Rotates the box to make a diamond */
+  transition: all 0.25s ease;
+  color: transparent;
+  border: 1px solid #0b86f8;
+  box-shadow: 1px 1px #0b86f8, 2px -2px #0b86f8;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-property: all;
+}
+body .playbook .flow-chart .content .container .rhombus #route::after {
+  content: "ROUTE";
+  transform: rotate(-45deg);
+  position: absolute;
+  color: #333;
+  font-weight: bold;
+}
+body .playbook .flow-chart .content .container .rhombus #route:hover {
+  background-color: rgba(127, 213, 247, 0.8745098039);
+  box-shadow: none;
+  transform: rotate(45deg) translate(1px, 2px);
+}
+body .playbook .flow-chart .content .container .rhombus #route.selected {
+  background-color: rgba(127, 213, 247, 0.8745098039);
+}
+@media (max-width: 425px) {
+  body .playbook .flow-chart .content .container {
+    top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  body .playbook .flow-chart .content .container {
+    background-image: none;
+    background-color: #ec7837 !important;
+  }
+}
+body .playbook .flow-chart .dialog .dialog-content {
+  height: 100%;
+  width: 28%;
+  top: 0;
+  right: 0;
+  font-weight: normal;
+  font-family: Mulish, sans-serif, arial;
+  font-size: 17px;
+  transform: translateX(100%);
+  transition: transform 0.35s ease;
+  z-index: 1000;
+  background-color: #fff;
+}
+@media (max-width: 576px) {
+  body .playbook .flow-chart .dialog .dialog-content {
+    width: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  body .playbook .flow-chart .dialog .dialog-content {
+    width: 50%;
+  }
+}
+body .playbook .flow-chart .dialog .dialog-content img:hover {
+  cursor: zoom-in;
+}
+body .playbook .flow-chart .dialog .dialog-content .dailog-header {
+  font-family: "Oswald", Arial, sans-serif;
+  width: 100%;
+  background-color: #00aeef;
+  border-bottom: 1px solid #042579;
+}
+body .playbook .flow-chart .dialog .dialog-content .dailog-header .title-wrapper h2 {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 8px;
+}
+body .playbook .flow-chart .dialog .dialog-content .dailog-header .title-wrapper span {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  font-family: mulish, Arial, sans-serif;
+}
+body .playbook .flow-chart .dialog .dialog-content .dailog-header .cancel button {
+  cursor: url("/images/ball_01.png") 16 16, auto !important;
+  font-family: mulish, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  border: none;
+  background: #fff;
+  padding: 10px 7px;
+  border-radius: 20px 19px;
+  color: red;
+  box-shadow: 1.5px 1.5px #000000;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-property: all;
+}
+body .playbook .flow-chart .dialog .dialog-content .dailog-header .cancel button img {
+  cursor: url("/images/ball_01.png") 16 16, auto !important;
+}
+body .playbook .flow-chart .dialog .dialog-content .dailog-header .cancel button:hover {
+  box-shadow: none;
+  transform: translate(1px, 2px);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body {
+  padding: 0px 30px !important;
+  overflow-y: auto;
+  background-color: #ffffff;
+  flex: 5;
+  width: 100%;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content {
+  width: 100%;
+  padding: 20px 0;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .semcdr-flow {
+  font-size: 13px;
+  font-weight: 800;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .fcb-grid .fcb-cell {
+  border: 1px solid #000000;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  font-family: "Oswald", sans-serif, arial;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .fcb-grid .fcb-cell .fcb-desc {
+  font-family: "mulish", sans-serif, arial;
+  font-weight: normal;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 17px;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .fcb-grid .fcb-cell:first-child {
+  color: #0c44d3;
+  border-right: none;
+  border-bottom: none;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .fcb-grid .fcb-cell:nth-child(2) {
+  color: #ff0000;
+  border-bottom: none;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .fcb-grid .fcb-cell:nth-child(3) {
+  color: #454545;
+  border-right: none;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .fcb-grid .fcb-cell:last-child {
+  color: #008600;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .ansoff-grid {
+  border: 7px double #000000;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .ansoff-grid .ansoff-cell {
+  padding: 10px 10px;
+  height: 200px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif, arial;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .ansoff-grid .ansoff-cell .ansoff-desc {
+  font-family: "mulish", sans-serif, arial;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 17px;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .ansoff-grid .ansoff-cell:first-child {
+  color: #065f46;
+  background-color: #ecfdf5;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .ansoff-grid .ansoff-cell:nth-child(2) {
+  color: #115e59;
+  background-color: #f0fdfa;
+  border-bottom: 1px solid #000000;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .ansoff-grid .ansoff-cell:nth-child(3) {
+  color: rgb(55, 48, 163);
+  background-color: rgb(238, 242, 255);
+  border-right: 1px solid #000000;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .ansoff-grid .ansoff-cell:last-child {
+  color: rgb(159, 18, 57);
+  background-color: rgb(255, 241, 242);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .hierarchy-funnel {
+  border: 7px double #000000;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .hierarchy-funnel .funnel-stage {
+  font-size: 15px;
+  padding: 8px 10px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid #000000;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .hierarchy-funnel .funnel-stage:first-child {
+  background-color: rgb(255, 255, 255);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .hierarchy-funnel .funnel-stage:nth-child(2) {
+  background-color: rgb(248, 250, 252);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .hierarchy-funnel .funnel-stage:nth-child(3) {
+  background-color: rgb(241, 245, 249);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .hierarchy-funnel .funnel-stage:nth-child(4) {
+  background-color: rgb(226, 232, 240);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .hierarchy-funnel .funnel-stage:nth-child(5) {
+  background-color: rgb(203, 213, 225);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .hierarchy-funnel .funnel-stage:last-child {
+  border-bottom: none;
+  background-color: rgb(30, 41, 59);
+  color: #fff;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .stp-model .stp-stage {
+  padding: 10px;
+  border: 1px solid #3d3d3d;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: rgb(238, 249, 255);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .stp-model .stp-stage:hover {
+  transform: rotate(-2deg);
+  overflow: hidden;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-body .dialog-content .stp-model .stp-stage:first-child {
+  margin-top: 20px;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-footer {
+  font-family: mulish, Arial, sans-serif;
+  width: 100%;
+  padding: 14px 20px;
+  border-top: 1px solid #042579;
+  background-color: rgba(0, 175, 239, 0.6039215686);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-footer #prevBtn {
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #ec7837;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  cursor: url("images/ball_01.png") 16 16, auto !important;
+  box-shadow: 1.5px 1.5px #000000;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-property: all;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-footer #prevBtn img {
+  cursor: url("images/ball_01.png") 16 16, auto !important;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-footer #prevBtn:hover {
+  box-shadow: none;
+  transform: translate(2px, 3px);
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-footer #nextBtn {
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #00aeef;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  cursor: url("images/ball_01.png") 16 16, auto !important;
+  box-shadow: 1.5px 1.5px #000000;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-property: all;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-footer #nextBtn img {
+  cursor: url("images/ball_01.png") 16 16, auto !important;
+}
+body .playbook .flow-chart .dialog .dialog-content .dialog-footer #nextBtn:hover {
+  box-shadow: none;
+  transform: translate(2px, 3px);
+}
+body .playbook .flow-chart .dialog.open .dialog-content {
+  transform: translateX(0);
+}
+body .playbook .flow-chart .image-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 40, 0.954);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+body .playbook .flow-chart .image-zoom-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  transform: scale(0.85);
+  transition: transform 0.25s ease;
+}
+body .playbook .flow-chart .image-zoom-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+body .playbook .flow-chart .image-zoom-overlay.open img {
+  transform: scale(1);
+}
+body .playbook .flow-chart .image-zoom-overlay {
+  /* Close button */
+}
+body .playbook .flow-chart .image-zoom-overlay .image-zoom-close {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+body .playbook .flow-chart .dropdown-item {
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 12px;
+  cursor: url("images/ball_01.png") 16 16, auto !important;
+}
+body .playbook .flow-chart .dropdown-item.open .dropdown-body {
+  max-height: 800px;
+  opacity: 1;
+  padding-top: 12px;
+}
+body .playbook .flow-chart .dropdown-item.open .dropdown-icon {
+  transform: rotate(45deg);
+}
+body .playbook .flow-chart .dropdown-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: url("images/ball_01.png") 16 16, auto !important;
+}
+body .playbook .flow-chart .dropdown-icon {
+  font-size: 22px;
+  transition: transform 0.25s ease;
+}
+body .playbook .flow-chart .dropdown-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.35s ease;
+  padding-bottom: 12px;
+}
+body .playbook .flow-chart .dropdown-desc {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #444;
+}
+body .playbook .flow-chart .dropdown-body img {
+  width: 100%;
+  border-radius: 6px;
+  cursor: zoom-in;
+}
+body .playbook .flow-chart .watch-now-btn {
+  margin: 10px 0;
+  background: transparent;
+  border: none;
+  color: #0c44d3;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+body .playbook .flow-chart .watch-now-btn:hover {
+  background: rgba(12, 68, 211, 0.3411764706);
+  cursor: url("images/ball_01.png") 16 16, auto !important;
+}
+body .playbook .flow-chart .watch-now-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: 1px solid #0c44d3;
+  border-radius: 6px;
+  background: #fff;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  body .playbook .flow-chart #flow-svg {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  body .playbook .flow-chart #flow-svg path {
+    stroke-width: 2;
+    opacity: 0.7;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
