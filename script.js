@@ -199,19 +199,23 @@ function createStpModel() {
   container.className = "stp-model mb-3";
 
   const stages = [
-    { label: "Geographic", desc: "Country, City, Urban/Rural" },
-    { label: "Demographic", desc: "Age, Gender, Income, Education" },
-    { label: "Psychographic", desc: "Lifestyle, Values, Personality" },
-    { label: "Behavioral", desc: "Usage rate, Loyalty, Readiness" }
+    { label: "Geographic", desc: "Country, City, Urban/Rural", icon: "images/Geographic.png" },
+    { label: "Demographic", desc: "Age, Gender, Income, Education", icon: "images/Demographic.png" },
+    { label: "Psychographic", desc: "Lifestyle, Values, Personality", icon: "images/Psychographic.png" },
+    { label: "Behavioral", desc: "Usage rate, Loyalty, Readiness", icon: "images/Behavioral.png" }
   ];
 
   stages.forEach(stage => {
     const row = document.createElement("div");
-    row.className = "stp-stage";
+    row.className = "stp-stage d-flex align-items-center mb-2 p-2 border rounded";
+    row.style.background = "#effaff";
 
     row.innerHTML = `
-      <span class="stp-title">${stage.label}:</span>
-      <span class="stp-desc">${stage.desc}</span>
+      <img src="${stage.icon}" alt="${stage.label}" style="width: 40px; margin-right: 15px;">
+      <div>
+        <div class="stp-title" style="font-weight: bold;">${stage.label}:</div>
+        <span class="stp-desc" style="font-size: 0.9em;">${stage.desc}</span>
+      </div>
     `;
 
     container.appendChild(row);
@@ -418,11 +422,6 @@ const steps = [
     content: [
       { type: "text", value: "Target Audience is broad term. For Bisleri, anyone who is thirsty is technically their target audience. But they cannot create a campaign based on this understanding. Narrowing down your target audience, hence, becomes crucial." },
       { type: "text", value: "With the STP model you can break down your target audience into smaller segments and create different messages for those particular segments." },
-      { type: "text", value: "You can segment your audience based on the following factors:" },
-      { type: "text", value: "Psychographic Attributes (lifestyle preferences, hobbies, beliefs, interests)" },
-      { type: "text", value: "Geographic Attributes (country, state, city, region, weather)" },
-      { type: "text", value: "Behavioural attributes (online habits, preferred communication channels, brand loyalty)" },
-      { type: "text", value: "Demographics (age, gender, economic status, education, profession)" },
       { type: "stp-model" }
     ]
   },
