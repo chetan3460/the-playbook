@@ -347,6 +347,7 @@ body .playbook .flow-chart .dialog .dialog-content .dailog-header .cancel button
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-property: all;
+  padding: 0;
 }
 body .playbook .flow-chart .dialog .dialog-content .dailog-header .cancel button img {
   cursor: url("/images/ball_01.png") 16 16, auto !important;
