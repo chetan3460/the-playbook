@@ -170,16 +170,17 @@ body .playbook .flow-chart .content .container {
   transition: transform 0.35s ease;
 }
 .playbook.dialog-open .content .container {
-  transform: translateX(-20%);
+  transform: scale(0.68) translateX(-30%);
+  transform-origin: center 20%;
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .playbook.dialog-open .content .container {
-    transform: translateX(-30%);
+    transform: scale(0.6) translateX(-42%);
   }
 }
 @media (max-width: 576px) {
   .playbook.dialog-open .content .container {
-    transform: translateX(0);
+    transform: scale(1) translateX(0);
   }
 }
 
