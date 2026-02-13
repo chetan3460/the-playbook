@@ -381,7 +381,7 @@ const steps = [
       { type: "text", value: "Everyday products like toothpaste, detergents, and stationery involve quick, habitual decisions, though features still matter. Trials and demos help drive preference." },
       { type: "text", value: "<b>Quadrant 4: Low Involvement + Feeling</b>" },
       { type: "text", value: "mpulse products like ice cream, snacks, and inexpensive accessories are bought first and evaluated later. Advertising should stress low price and instant" },
-      { type: "image", src: "images/fcb-grid.png", alt: "insights" }
+      { type: "image", src: "images/fcb-grid.png", alt: "FCB Grid" }
 
     ]
   },
@@ -390,12 +390,10 @@ const steps = [
     title: "ANSOFF MATRIX",
     content: [
       // { type: "ansoff-grid" },
-      { type: "image", src: "images/ansoff.png", alt: "ansoff matrix" },
-      { type: "text", value: "Before we begin crafting the perfect message, we need to understand our product. The FCB grid helps us place it perfectly on a neat grid." },
-      { type: "text", value: "The grid has two axes:" },
-      { type: "text", value: "1. X Axis - Emotional Involvement" },
-      { type: "text", value: "2. Y Axis - Cognitive Involvement" },
-      { type: "text", value: "Based on this, we get a grid with four quadrants. Placing your product in one of these quadrants helps you understand how your customer is going to view the product and if it is going to be a high-involvement rational purchase or a low involvement emotional purchase." }
+      { type: "image", src: "images/ansoff.png", alt: "Ansoff Matrix" },
+      { type: "text", value: "This matrix is usually used for strategists and product development teams to create new products. But it can also be used to understand a product and where it stands in the market." },
+      { type: "text", value: "On the Y axis we have Newness of markets<br>On the X axis, we have Newness of Products" },
+      { type: "text", value: "The grid gives us four quadrants which either tell us if our product is an established product (with a lot of competition) in a saturated market or is it an innovative product in a market that is yet to be formally established." }
     ]
   },
   {

@@ -155,7 +155,7 @@ body .playbook .flow-chart .title h3 {
   margin-bottom: 3px;
 }
 body .playbook .flow-chart .title p {
-  font-family: mulish;
+  font-family: "mulish", sans-serif;
   margin-bottom: 0;
 }
 body .playbook .flow-chart .content .container {
