@@ -143,7 +143,7 @@ body .playbook .header .banner .btn::after:hover a::before {
   transition-delay: 1.5s;
 }
 body .playbook .flow-chart .title {
-  background-color: #7fd6f7;
+  background-color: #1383d2;
   box-shadow: 1.5px 10px 15px rgba(50, 50, 50, 0.3019607843);
   position: sticky;
   top: 0;
@@ -502,7 +502,7 @@ body .playbook .flow-chart .dialog .dialog-content .dialog-footer {
   width: 100%;
   padding: 14px 20px;
   border-top: 1px solid #042579;
-  background-color: rgba(0, 175, 239, 0.6039215686);
+  background-color: #00aeef;
 }
 body .playbook .flow-chart .dialog .dialog-content .dialog-footer #prevBtn {
   padding: 5px 15px;

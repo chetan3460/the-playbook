@@ -339,7 +339,6 @@ const steps = [
   {
     id: "client",
     title: "CLIENT BRIEF",
-    subtitle: "KICKOFF",
     content: [
       { type: "text", value: "The starting point. The raw request and requirements from the client. Who is speaking to whom?" }
     ]
