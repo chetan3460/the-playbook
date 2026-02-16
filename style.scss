@@ -203,7 +203,7 @@ body {
         }
 
         p {
-          font-family: "mulish", sans-serif;
+          font-family: "Mulish", sans-serif;
           margin-bottom: 0;
         }
       }
@@ -365,8 +365,7 @@ body {
           width: 28%;
           top: 0;
           right: 0;
-          font-weight: normal;
-          font-family: Mulish, sans-serif, arial;
+          font-family: "Mulish", sans-serif, Arial;
           font-size: 17px;
           transform: translateX(100%);
           transition: transform 0.35s ease;
@@ -404,7 +403,7 @@ body {
                 font-size: 18px;
                 line-height: 20px;
                 font-weight: normal;
-                font-family: mulish, Arial, sans-serif;
+                font-family: "Mulish", Arial, sans-serif;
               }
             }
 
@@ -413,7 +412,7 @@ body {
                 cursor:
                   url("/images/ball_01.png") 16 16,
                   auto !important;
-                font-family: mulish, Helvetica, sans-serif;
+                font-family: "Mulish", Helvetica, sans-serif;
                 font-size: 20px;
                 line-height: 20px;
                 font-weight: bold;
@@ -453,6 +452,19 @@ body {
               width: 100%;
               padding: 20px 0;
 
+              ul {
+                padding-left: 20px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+
+                li {
+                  font-size: 15px;
+                  line-height: 20px;
+                  margin-bottom: 4px;
+                  color: #555;
+                }
+              }
+
               .semcdr-flow {
                 font-size: 13px;
                 font-weight: 800;
@@ -469,7 +481,7 @@ body {
                   font-family: "Oswald", sans-serif, arial;
 
                   .fcb-desc {
-                    font-family: "mulish", sans-serif, arial;
+                    font-family: "Mulish", sans-serif, Arial;
                     font-weight: normal;
                     font-size: 14px;
                     font-style: italic;
@@ -508,7 +520,7 @@ body {
                   font-family: "Oswald", sans-serif, arial;
 
                   .ansoff-desc {
-                    font-family: "mulish", sans-serif, arial;
+                    font-family: "Mulish", sans-serif, Arial;
                     font-weight: normal;
                     font-size: 12px;
                     font-style: italic;
@@ -602,7 +614,7 @@ body {
           }
 
           .dialog-footer {
-            font-family: mulish, Arial, sans-serif;
+            font-family: "Mulish", Arial, sans-serif;
             width: 100%;
             padding: 14px 20px;
             border-top: 1px solid #042579;

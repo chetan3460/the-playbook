@@ -431,9 +431,9 @@ const steps = [
     title: "CHANNEL",
     content: [
       { type: "text", value: "It’s important to know from the get-go where your message is going to be displayed. Because your medium has a great influence on your message and how it will be executed. Generally, we can divide the media into 3 categories:" },
-      { type: "text", value: "1. Print  <br><span class='eg'>Newspapers</span>   <br><span class='eg'>Magazines</span>   <br><span class='eg'>Brochures / Flyers / Pamphlets</span> <br><span class='eg'>Packaging (printed labels/boxes)</span>  <br><span class='eg'>In-store printed materials (danglers, tent cards, wobblers, shelf strips)</span>" },
-      { type: "text", value: "2. Digital  <br><span class='eg'>Social media ads (Instagram, Facebook, YouTube, LinkedIn)</span>   <br><span class='eg'>Search ads (Google/Bing)</span>   <br><span class='eg'>Display/banner ads (websites & apps)</span> <br><span class='eg'>Video ads (YouTube, OTT platforms)</span>  <br><span class='eg'>Email marketing</span>  <br><span class='eg'>SMS/WhatsApp marketing</span> <br><span class='eg'>Mobile in-app ads</span> <br><span class='eg'>Push notifications</span> <br><span class='eg'>Websites & content marketing (SEO blogs)</span> <br><span class='eg'>Podcasts & music streaming ads</span> <br><span class='eg'>Influencer marketing</span>" },
-      { type: "text", value: "3. Outdoors (OOH) <br><span class='eg'>Billboards (static & digital)</span> <br><span class='eg'>Bus shelters</span> <br><span class='eg'>Metro/train panels</span> <br><span class='eg'>Airport branding</span>  <br><span class='eg'>Mall branding & kiosks</span>  <br><span class='eg'>Hoardings near highways</span> <br><span class='eg'>Mobile in-app ads</span> <br><span class='eg'>Push notifications</span> <br><span class='eg'>Websites & content marketing (SEO blogs)</span> <br><span class='eg'>Auto-rickshaw & taxi ads</span> <br><span class='eg'>Bus wraps & metro train wraps</span> <br><span class='eg'>Roadshows, on-ground activations</span> <br><span class='eg'>Event branding (expos, festivals, concerts)</span>" }
+      { type: "text", value: "<b>1. Print</b><ul><li>Newspapers</li><li>Magazines</li><li>Brochures / Flyers / Pamphlets</li><li>Packaging (printed labels/boxes)</li><li>In-store printed materials (danglers, tent cards, wobblers, shelf strips)</li></ul>" },
+      { type: "text", value: "<b>2. Digital</b><ul><li>Social media ads (Instagram, Facebook, YouTube, LinkedIn)</li><li>Search ads (Google/Bing)</li><li>Display/banner ads (websites & apps)</li><li>Video ads (YouTube, OTT platforms)</li><li>Email marketing</li><li>SMS/WhatsApp marketing</li><li>Mobile in-app ads</li><li>Push notifications</li><li>Websites & content marketing (SEO blogs)</li><li>Podcasts & music streaming ads</li><li>Influencer marketing</li></ul>" },
+      { type: "text", value: "<b>3. Outdoors (OOH)</b><ul><li>Billboards (static & digital)</li><li>Bus shelters</li><li>Metro/train panels</li><li>Airport branding</li><li>Mall branding & kiosks</li><li>Hoardings near highways</li><li>Auto-rickshaw & taxi ads</li><li>Bus wraps & metro train wraps</li><li>Roadshows, on-ground activations</li><li>Event branding (expos, festivals, concerts)</li></ul>" }
     ]
   },
   {
@@ -522,7 +522,7 @@ const steps = [
       { type: "dropdown", label: "NOSTALGIA", desc: "Longing for the past.", cta: "WATCH NOW", link: "https://www.youtube.com/watch?v=iVIJpwW1UcQ" },
       { type: "dropdown", label: "HUMOUR", desc: "Making them laugh to lower defenses.", image: "images/humour.jpg" },
       { type: "dropdown", label: "JOY", desc: "Pure happiness associated with the product.", image: "images/joy.jpg" },
-      { type: "dropdown", label: "AMUSEMENT/SURPRISE", desc: "The element of shock or delight.", image: "images/" },
+      { type: "dropdown", label: "AMUSEMENT/SURPRISE", desc: "The element of shock or delight.", image: "images/Volkswagen-Electronic-brake-ads-i02.jpg" },
       { type: "dropdown", label: "ENVY", desc: "Wanting what others have.", image: "images/envy.jpg" },
       { type: "dropdown", label: "CURIOSITY", desc: "Driving interest through the unknown.", image: "images/curiosity.jpg" }
     ]
