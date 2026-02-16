@@ -143,7 +143,7 @@ body .playbook .header .banner .btn::after:hover a::before {
   transition-delay: 1.5s;
 }
 body .playbook .flow-chart .title {
-  background-color: #1383d2;
+  background-color: #00aeef;
   box-shadow: 1.5px 10px 15px rgba(50, 50, 50, 0.3019607843);
   position: sticky;
   top: 0;
@@ -317,7 +317,7 @@ body .playbook .flow-chart .dialog .dialog-content img:hover {
 body .playbook .flow-chart .dialog .dialog-content .dailog-header {
   font-family: "Oswald", Arial, sans-serif;
   width: 100%;
-  background-color: #00aeef;
+  background-color: #0161b2;
   border-bottom: 1px solid #042579;
 }
 body .playbook .flow-chart .dialog .dialog-content .dailog-header .title-wrapper h2 {
@@ -502,7 +502,7 @@ body .playbook .flow-chart .dialog .dialog-content .dialog-footer {
   width: 100%;
   padding: 14px 20px;
   border-top: 1px solid #042579;
-  background-color: #00aeef;
+  background-color: #0161b2;
 }
 body .playbook .flow-chart .dialog .dialog-content .dialog-footer #prevBtn {
   padding: 5px 15px;
@@ -528,7 +528,7 @@ body .playbook .flow-chart .dialog .dialog-content .dialog-footer #prevBtn:hover
 body .playbook .flow-chart .dialog .dialog-content .dialog-footer #nextBtn {
   padding: 5px 15px;
   border-radius: 15px;
-  background-color: #00aeef;
+  background-color: #1383d2;
   border: none;
   font-weight: 500;
   color: #fff;
