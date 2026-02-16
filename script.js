@@ -457,7 +457,7 @@ const steps = [
     id: "route",
     title: "ROUTE",
     content: [
-      { type: "text", value: "" }
+      { type: "text", value: "The creative route you choose, based from your research and insights." }
     ]
   },
   {
@@ -582,7 +582,7 @@ const steps = [
     id: "creative",
     title: "THE FINAL CREATIVE",
     content: [
-      { type: "text", value: "The complete campaign ready for launch." }
+      { type: "text", value: "The complete creative ready for launch." }
     ]
   },
 ];
